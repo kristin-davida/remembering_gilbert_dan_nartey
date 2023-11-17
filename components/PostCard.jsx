@@ -16,13 +16,13 @@ const PostCard = ({message}) => {
         //     {messages.map((message) => (
         //         // eslint-disable-next-line react/jsx-key
                 <div className="px-60 py-4 w-full align-center justify-center">
-                    <div className="h-full bg-gray-100 p-8 rounded">
+                    <div className="h-full bg-gray-600 p-8 rounded">
                         <a className="inline-flex items-center">
                             <span className="flex-grow flex flex-col pl-4">
-                              <span className="title-font font-medium text-gray-900">{message.name}</span>
-                              <span className="text-gray-500 text-sm">{message.location}</span>
+                              <span className="title-font font-medium text-white">{message.name}</span>
+                              <span className="text-gray-300 text-sm">{message.location}</span>
                                 <br></br>
-                                <span className="text-gray-600 text-lg">{message.message}</span>
+                                <span className="text-white text-lg">{message.message}</span>
                             </span>
                         </a>
                     </div>
