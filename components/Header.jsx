@@ -2,12 +2,10 @@ import React from 'react';
 
 import Link from 'next/link';
 
-const categories = [{name: 'Post a Message', slug: 'post-message'}, {name: 'View Messages', slug: 'view-messages'}]
-
 const Header = () => {
 
     return (
-        <header className="text-gray-600 body-font bg-gray-500">
+        <header className="text-gray-600 body-font bg-gray-800">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <div className="md:float-left block px-4">
                     <Link href="/">

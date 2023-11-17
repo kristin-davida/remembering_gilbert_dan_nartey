@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import React, {useRef, useState} from "react";
+import "styles/globals.css";
 import {submitMessage} from "@/services";
+import {Header} from "@/components";
 
 const Home = () => {
 
@@ -54,19 +56,16 @@ const Home = () => {
   return (
       <div className="message">
         <div>
-            <Head>
-              <title>Book of Condolence</title>
-              <link rel="icon" href="/favicon.ico" />
-            </Head>
+            <Header />
         </div>
 
           <div className=" text-gray-600 message-font relative" >
               <div className="message container px-5 py-24 mx-auto">
                   <div>
                       <div className="flex flex-col text-center w-full mb-12">
-                          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Message of
+                          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Message of
                               Condolence</h1>
-                          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Please share a message of condolence
+                          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Please share a message of condolence
                               with the family in the box below.</p>
                       </div>
                       <div className="lg:w-1/2 md:w-2/3 mx-auto">

@@ -20,9 +20,9 @@ const PostCard = ({message}) => {
                         <a className="inline-flex items-center">
                             <span className="flex-grow flex flex-col pl-4">
                               <span className="title-font font-medium text-gray-900">{message.name}</span>
-                              <span className="text-gray-500 text-sm">{message.name}</span>
+                              <span className="text-gray-500 text-sm">{message.location}</span>
                                 <br></br>
-                                <span className="text-gray-600 text-lg">{message.name}</span>
+                                <span className="text-gray-600 text-lg">{message.message}</span>
                             </span>
                         </a>
                     </div>

@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import { getMessages } from "@/services";
-import {PostCard, Loader} from "@/components";
+import {PostCard, Loader, Header} from "@/components";
 import {useRouter} from 'next/router'
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
+import "styles/globals.css";
 
 
 // const Header = dynamic(() => import('../../components/Header'), { ssr: false })
@@ -13,6 +14,7 @@ export default function Home({}) {
 
     useEffect(() => {
         getMessages().then((result) => setMessages(result))
+        console.log(messages)
     })
 
     // if(router.isFallback) {
@@ -22,10 +24,7 @@ export default function Home({}) {
     return (
         <div>
             <div>
-                <Head>
-                    <title>Book of Condolence</title>
-                    <link rel="icon" href="/favicon.ico" />
-                </Head>
+                <Header />
             </div>
 
             <div className='grid grid-cols-1'>

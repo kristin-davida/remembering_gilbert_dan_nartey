@@ -17,23 +17,20 @@ export const submitMessage = async (obj) => {
 export const getMessages = async () => {
   const query = gql`
     query GetMessages {
-        postsConnection {
-          edges {
-            node {
-              name
-              id
-              comments {
-                message
-                location
-              }
-            }
+      commentsConnection {
+        edges {
+          node {
+            location
+            message
+            name
           }
         }
       }
+    }
   `;
 
   const result = await request(graphqlAPI, query);
 
-  return result.postsConnection.edges;
+  return result.commentsConnection.edges;
 }
 

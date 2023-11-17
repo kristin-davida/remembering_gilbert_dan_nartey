@@ -1,3 +1,5 @@
+import "styles/globals.css";
+
 import HomePage from './home-page'
 
 export default async function Page() {
