@@ -40,6 +40,7 @@ export default function Home() {
                                    src="alzheimers.png"/>
                           </div>
                           <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Donate to Charity</h2>
+                          {/* eslint-disable-next-line react/no-unescaped-entities */}
                           <p className="leading-relaxed text-base">The Dan-Nartey Family have chosen to support the The Alzheimer's Society in loving memory of Gilbert. Any donations made are greatly appreciated and will contribute to making a difference in the lives of those living with dementia.</p>
                           <a href="https://www.alzheimers.org.uk/get-involved/donate?form=DonateNow">
                               <button
