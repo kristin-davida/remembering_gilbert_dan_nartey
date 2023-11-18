@@ -17,14 +17,47 @@ export default function Home({}) {
         console.log(messages)
     })
 
-    // if(router.isFallback) {
-    //     return <Loader />
-    // }
+    function debounce(fn, ms) {
+        let timer
+        return _ => {
+            clearTimeout(timer)
+            timer = setTimeout(_ => {
+                timer = null
+                fn.apply(this, arguments)
+            }, ms)
+        };
+    }
 
-    return (
+    function MyComponent() {
+        const [dimensions, setDimensions] = React.useState({
+            height: window.innerHeight,
+            width: window.innerWidth
+        })
+        React.useEffect(() => {
+            const debouncedHandleResize = debounce(function handleResize() {
+                setDimensions({
+                    height: window.innerHeight,
+                    width: window.innerWidth
+                })
+            }, 1000)
+
+            window.addEventListener('resize', debouncedHandleResize)
+
+            return _ => {
+                window.removeEventListener('resize', debouncedHandleResize)
+
+            }
+        })
+
+    } return (
         <div>
             <div>
                 <Header />
+            </div>
+
+            <div className="flex flex-col text-center w-full mb-12 py-16">
+                <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-800">Messages of
+                    Condolence</h1>
             </div>
 
             <div className='grid grid-cols-1'>

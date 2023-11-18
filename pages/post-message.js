@@ -53,6 +53,37 @@ const Home = () => {
             });
     };
 
+    function debounce(fn, ms) {
+        let timer
+        return _ => {
+            clearTimeout(timer)
+            timer = setTimeout(_ => {
+                timer = null
+                fn.apply(this, arguments)
+            }, ms)
+        };
+    }
+
+    function MyComponent() {
+        const [dimensions, setDimensions] = React.useState({
+            height: window.innerHeight,
+            width: window.innerWidth
+        })
+        React.useEffect(() => {
+            const debouncedHandleResize = debounce(function handleResize() {
+                setDimensions({
+                    height: window.innerHeight,
+                    width: window.innerWidth
+                })
+            }, 1000)
+
+            window.addEventListener('resize', debouncedHandleResize)
+
+            return _ => {
+                window.removeEventListener('resize', debouncedHandleResize)
+
+            }
+        })};
   return (
       <div className="message">
         <div>
@@ -63,7 +94,7 @@ const Home = () => {
               <div className="message container px-5 py-24 mx-auto">
                   <div>
                       <div className="flex flex-col text-center w-full mb-12">
-                          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Message of
+                          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800">Message of
                               Condolence</h1>
                           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Please share a message of condolence
                               with the family in the box below.</p>
@@ -72,17 +103,17 @@ const Home = () => {
                           <div className="flex flex-wrap -m-2">
                               <div className="p-2 w-1/2">
                                   <div className="relative">
-                                      <input ref={nameEl} className="py-2 px-4 outline-white w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-900 text-white" placeholder="Name" name="name" />
+                                      <input ref={nameEl} className="py-2 px-4  w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700" placeholder="Name" name="name" />
                                   </div>
                               </div>
                               <div className="p-2 w-1/2">
                                   <div className="relative">
-                                      <input ref={locationEl} className="py-2 px-4 outline-white w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-900 text-white" placeholder="Location" name="location" />
+                                      <input ref={locationEl} className="py-2 px-4  w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700" placeholder="Location" name="location" />
                                   </div>
                               </div>
                               <div className="p-2 w-full">
                                   <div className="relative">
-                                      <input ref={messageEl} className="py-32 px-4 outline-white w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-900 text-white" placeholder="Message" name="message" />
+                                      <input ref={messageEl} className="py-32 px-4  w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700" placeholder="Message" name="message" />
                                   </div>
                               </div>
                           </div>
