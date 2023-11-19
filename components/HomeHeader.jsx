@@ -5,8 +5,11 @@ const Header = () => {
 
     return (
         <div>
-            <header className="text-gray-600 body-font mt-8">
+            <header className="text-gray-600 body-font">
+                <img src="12.jpg" className="w-full header-img"/>
+
                 <div className="container mx-auto px-5 py-2 items-center justify-center flex-col">
+
                     <div className="text-center ">
                         <Link href="/">
                             <span className="cursor-pointer font-bold text-3xl text-gray-800 text-center">Celebrating the Life of Gilbert Dan-Nartey</span>

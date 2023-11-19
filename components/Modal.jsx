@@ -21,8 +21,10 @@ const Modal = () => {
                                         <span className="text-black opacity-7 h-6 w-6 text-l block bg-gray-400 py-0 rounded-full">x</span>
                                     </button>
                                 </div>
-                                <div className="relative p-6 flex-auto">
-                                    <img src="bank_details.png"/>
+                                <div className="relative p-6 flex-auto items-center text-center justify-center">
+                                    <p>The Dan-Nartey Family thank you for your kind donation.<br></br>Your kind sympathy and support is greatly appreciated.</p>
+                                    <img src="bank_details3.png" className="center py-4"/>
+                                    <p>Please leave your name as a reference<br></br>so that we can extend our thanks and gratitude.</p>
                                 </div>
                                 <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
                                     <button
