@@ -7,7 +7,8 @@ const Header = () => {
         <div>
             <header className="text-gray-600 body-font">
                 <div className="relative">
-                    <img src="12 - Copy.jpg" className="w-full header-img"/>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="12 - Copy.jpg" alt="Gilbert Dan-Nartey" className="w-full header-img"/>
                     <h1 className="font-bold text-3xl text-gray-800 text-center justify-center items-end absolute inset-0 flex">Celebrating the Life of Gilbert Dan-Nartey</h1>
                 </div>
 

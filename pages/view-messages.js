@@ -1,5 +1,5 @@
 import { getMessages } from "@/services";
-import {PostCard, Loader, Header} from "@/components";
+import {PostCard, Header} from "@/components";
 import {useRouter} from 'next/router'
 import React, {useEffect, useState} from "react";
 import "styles/globals.css";
@@ -14,39 +14,7 @@ export default function Home({}) {
         console.log(messages)
     })
 
-    function debounce(fn, ms) {
-        let timer
-        return _ => {
-            clearTimeout(timer)
-            timer = setTimeout(_ => {
-                timer = null
-                fn.apply(this, arguments)
-            }, ms)
-        };
-    }
-
-    function MyComponent() {
-        const [dimensions, setDimensions] = React.useState({
-            height: window.innerHeight,
-            width: window.innerWidth
-        })
-        React.useEffect(() => {
-            const debouncedHandleResize = debounce(function handleResize() {
-                setDimensions({
-                    height: window.innerHeight,
-                    width: window.innerWidth
-                })
-            }, 1000)
-
-            window.addEventListener('resize', debouncedHandleResize)
-
-            return _ => {
-                window.removeEventListener('resize', debouncedHandleResize)
-
-            }
-        })
-
-    } return (
+    return (
         <div>
             <div>
                 <Header />
@@ -57,6 +25,7 @@ export default function Home({}) {
                     Condolence</h1>
             </div>
             <div className="h-96 overflow-hidden mb-8">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img alt="content" className="object-cover object-center h-full w-full p-8"
                      src="14.jpg"/>
             </div>
@@ -76,9 +45,4 @@ export async function getStaticProps() {
     return {
         props: { messages }
     }
-}
-
-export const metadata = {
-    title: 'Book of Condolence',
-    description: 'Submit a message on our online memorial book in loving memory of Gilbert Dan-Nartey',
 }

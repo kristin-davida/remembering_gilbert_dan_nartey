@@ -6,39 +6,7 @@ import React from "react";
 
 const HomePage = () => {
 
-  function debounce(fn, ms) {
-    let timer
-    return _ => {
-      clearTimeout(timer)
-      timer = setTimeout(_ => {
-        timer = null
-        fn.apply(this, arguments)
-      }, ms)
-    };
-  }
-
-  function MyComponent() {
-    const [dimensions, setDimensions] = React.useState({
-      height: window.innerHeight,
-      width: window.innerWidth
-    })
-    React.useEffect(() => {
-      const debouncedHandleResize = debounce(function handleResize() {
-        setDimensions({
-          height: window.innerHeight,
-          width: window.innerWidth
-        })
-      }, 1000)
-
-      window.addEventListener('resize', debouncedHandleResize)
-
-      return _ => {
-        window.removeEventListener('resize', debouncedHandleResize)
-
-      }
-    })
-
-  } return (
+  return (
       <div>
         <HomeHeader />
         <div className="text-gray-600 body-font">
@@ -67,18 +35,21 @@ const HomePage = () => {
             <div className="flex flex-wrap -m-4">
               <div className="lg:w-1/3 sm:w-1/3 p-4">
                 <div className="flex relative">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img alt="gallery" className="object-center"
                        src="PHOTO-2023-11-07-10-49-51.jpg"/>
                 </div>
               </div>
               <div className="lg:w-1/3 sm:w-1/3 p-4">
                 <div className="flex relative">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img alt="gallery" className="object-center"
                        src="11.jpg"/>
                 </div>
               </div>
               <div className="lg:w-1/3 sm:w-1/3 p-4">
                 <div className="flex relative">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img alt="gallery" className="object-center"
                        src="PHOTO-2023-10-28-07-09-29.jpg"/>
                 </div>

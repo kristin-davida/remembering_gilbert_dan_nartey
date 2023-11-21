@@ -1,5 +1,4 @@
 import "styles/globals.css";
-import {Header} from "@/components";
 
 export default function RootLayout({
                                        // Layouts must accept a children prop.
