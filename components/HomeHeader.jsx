@@ -9,7 +9,7 @@ const Header = () => {
                 <div className="relative">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src="12 - Copy.jpg" alt="Gilbert Dan-Nartey" className="w-full header-img"/>
-                    <h1 className="font-bold text-3xl text-gray-800 text-center justify-center items-end absolute inset-0 flex">Celebrating the Life of Gilbert Dan-Nartey</h1>
+                    <h1 className="font-bold xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-gray-800 text-center justify-center items-end absolute inset-0 flex">Celebrating the Life of Gilbert Dan-Nartey</h1>
                 </div>
 
                 {/*<div className="container mx-auto px-5 py-2 items-center justify-center flex-col">*/}
