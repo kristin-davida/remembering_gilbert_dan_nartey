@@ -8,7 +8,6 @@ export default function RootLayout({
                                    }) {
     return (
         <html lang="en">
-        <head>{metadata}</head>
         <body>{children}</body>
         <div id="modal-root"></div>
         </html>
