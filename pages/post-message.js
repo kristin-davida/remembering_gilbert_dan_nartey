@@ -91,7 +91,7 @@ const Home = () => {
             <section className="text-gray-600 body-font">
                 <div className="container px-8 py-16 mx-auto">
                     <div className="flex flex-wrap">
-                        <div className="lg:w-1/2 md:w-full px-8">
+                        <div className="lg:w-1/2 md:w-full px-8 mb-16">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800 text-center">Post a
                                 Message of
                                 Condolence</h1>
