@@ -16,24 +16,24 @@ const Header = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="container mx-auto flex flex-wrap px-5 py-2 items-center justify-center flex-col">
-                    <div className=" items-center text-base flex-wrap justify-center px-4">
-                        <a className="px-2 flex-wrap">
+                <div className="container mx-auto flex px-5 py-2 items-center justify-center flex-row flex-col">
+                    <div className=" items-center text-base justify-center px-4">
+                        <a className="px-2 relative">
                             <Link href="/">
                                 <span className="cursor-pointer text-sm text-gray-800">Home</span>
                             </Link>
                         </a>
-                        <a className="px-2 flex-wrap">
+                        <a className="px-2 relative">
                             <Link href="/post-message">
                                 <span className="cursor-pointer text-sm text-gray-800">Post Message</span>
                             </Link>
                         </a>
-                        <a className="px-2 flex-wrap">
+                        <a className="px-2 relative">
                             <Link href="/view-messages">
                                 <span className="cursor-pointer text-sm text-gray-800">View Messages</span>
                             </Link>
                         </a>
-                        <a className="px-2 flex-wrap">
+                        <a className="px-2 relative">
                             <Link href="/donate">
                                 <span className="cursor-pointer text-sm text-gray-800">Donate</span>
                             </Link>
