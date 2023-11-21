@@ -91,7 +91,7 @@ const Home = () => {
             <section className="text-gray-600 body-font">
                 <div className="container flex px-8 mt-0 md:flex-row flex-col items-center">
                     <div className="lg:w-1/2 md:w-1/2 mx-auto">
-                        <div className="flex flex-col text-center w-full mb-12 mt-0">
+                        <div className="flex flex-col text-center w-full mb-12 mt-16">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 mt-0 text-gray-800">Post a
                                 Message of
                                 Condolence</h1>
@@ -162,4 +162,9 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;
+
+export const metadata = {
+    title: 'Book of Condolence',
+    description: 'Submit a message on our online memorial book in loving memory of Gilbert Dan-Nartey',
+}

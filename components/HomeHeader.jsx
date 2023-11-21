@@ -17,7 +17,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="container mx-auto flex flex-wrap px-5 py-2 items-center justify-center flex-col">
-                    <div className=" items-center text-base justify-center px-4">
+                    <div className=" items-center text-base flex-wrap justify-center px-4">
                         <a className="px-2">
                             <Link href="/">
                                 <span className="cursor-pointer text-sm text-gray-800">Home</span>

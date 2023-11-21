@@ -18,22 +18,22 @@ const Header = () => {
                     <div className=" items-center text-base justify-center px-4">
                         <a className="px-2">
                             <Link href="/">
-                                <span className="cursor-pointer text-sm text-gray-800">Home</span>
+                                <span className="cursor-pointer text-xs text-gray-800">Home</span>
                             </Link>
                         </a>
                         <a className="px-2">
                             <Link href="/post-message">
-                                <span className="cursor-pointer text-sm text-gray-800">Post Message</span>
+                                <span className="cursor-pointer text-xs text-gray-800">Post Message</span>
                             </Link>
                         </a>
                         <a className="px-2">
                             <Link href="/view-messages">
-                                <span className="cursor-pointer text-sm text-gray-800">View Messages</span>
+                                <span className="cursor-pointer text-xs text-gray-800">View Messages</span>
                             </Link>
                         </a>
                         <a className="px-2">
                             <Link href="/donate">
-                                <span className="cursor-pointer text-sm text-gray-800">Donate</span>
+                                <span className="cursor-pointer text-xs text-gray-800">Donate</span>
                             </Link>
                         </a>
                     </div>

@@ -50,3 +50,8 @@ export default function Home() {
       </div>
   )
 }
+
+export const metadata = {
+    title: 'Book of Condolence',
+    description: 'Submit a message on our online memorial book in loving memory of Gilbert Dan-Nartey',
+}
