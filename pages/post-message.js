@@ -92,7 +92,7 @@ const Home = () => {
                 <div className="container px-8 py-16 mx-auto">
                     <div className="flex flex-wrap">
                         <div className="lg:w-1/2 md:w-full px-8 mb-16">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800 text-center">Post a
+                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800 text-center">Write a
                                 Message of
                                 Condolence</h1>
                             <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500 text-center mb-8">Please share a
@@ -138,7 +138,7 @@ const Home = () => {
                                     <h2 className="text-gray-900 font-medium title-font tracking-wider text-xl">Death Is
                                         Nothing At All</h2>
                                     <p className="text-gray-500">by Naa Dedei Crabbe</p>
-                                    <span className="inline-block h-1 w-10 rounded bg-gray-500 mt-8 mb-6"></span>
+                                    <span className="inline-block h-1 w-10 rounded bg-gray-500 mt-4 mb-2"></span>
                                     <p className="leading-relaxed text-sm">Death is nothing at all<br></br>I have only
                                         slipped away to the next room.<br></br>I am I and you are you.<br></br>Whatever
                                         you were to family.<br></br>Call me by my old familiar name.<br></br>Put no

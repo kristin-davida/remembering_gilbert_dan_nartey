@@ -6,16 +6,19 @@ const Header = () => {
     return (
         <div>
             <header className="text-gray-600 body-font">
-                <img src="12.jpg" className="w-full header-img"/>
-
-                <div className="container mx-auto px-5 py-2 items-center justify-center flex-col">
-
-                    <div className="text-center ">
-                        <Link href="/">
-                            <span className="cursor-pointer font-bold text-3xl text-gray-800 text-center">Celebrating the Life of Gilbert Dan-Nartey</span>
-                        </Link>
-                    </div>
+                <div className="relative">
+                    <img src="12 - Copy.jpg" className="w-full header-img"/>
+                    <h1 className="font-bold text-3xl text-gray-800 text-center justify-center items-end absolute inset-0 flex">Celebrating the Life of Gilbert Dan-Nartey</h1>
                 </div>
+
+                {/*<div className="container mx-auto px-5 py-2 items-center justify-center flex-col">*/}
+
+                {/*    <div className="text-center ">*/}
+                {/*        <Link href="/">*/}
+                {/*            <span className="cursor-pointer font-bold text-3xl text-gray-800 text-center">Celebrating the Life of Gilbert Dan-Nartey</span>*/}
+                {/*        </Link>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 <div className="container mx-auto flex px-5 py-2 items-center justify-center flex-row flex-col">
                     <div className=" items-center text-base justify-center px-4 flex  w-2/5">
                         <a className="px-2 ">

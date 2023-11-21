@@ -68,13 +68,13 @@ const HomePage = () => {
               <div className="lg:w-1/3 sm:w-1/3 p-4">
                 <div className="flex relative">
                   <img alt="gallery" className="object-center"
-                       src="11.jpg"/>
+                       src="PHOTO-2023-11-07-10-49-51.jpg"/>
                 </div>
               </div>
               <div className="lg:w-1/3 sm:w-1/3 p-4">
                 <div className="flex relative">
                   <img alt="gallery" className="object-center"
-                       src="PHOTO-2023-11-07-10-49-51.jpg"/>
+                       src="11.jpg"/>
                 </div>
               </div>
               <div className="lg:w-1/3 sm:w-1/3 p-4">
