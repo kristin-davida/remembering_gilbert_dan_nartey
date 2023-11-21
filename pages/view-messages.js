@@ -1,12 +1,9 @@
-import Head from 'next/head'
 import { getMessages } from "@/services";
 import {PostCard, Loader, Header} from "@/components";
 import {useRouter} from 'next/router'
 import React, {useEffect, useState} from "react";
 import "styles/globals.css";
 
-
-// const Header = dynamic(() => import('../../components/Header'), { ssr: false })
 
 export default function Home({}) {
     const [messages, setMessages] = useState([]);

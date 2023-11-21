@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import React, {useRef, useState} from "react";
 import "styles/globals.css";
 import {submitMessage} from "@/services";
@@ -90,9 +89,9 @@ const Home = () => {
             <Header/>
 
             <section className="text-gray-600 body-font">
-                <div className="container mx-auto flex px-5 mt-0 md:flex-row flex-col items-center">
+                <div className="container flex px-8 mt-0 md:flex-row flex-col items-center">
                     <div className="lg:w-1/2 md:w-1/2 mx-auto">
-                        <div className="flex flex-col text-center w-full mb-12">
+                        <div className="flex flex-col text-center w-full mb-12 mt-0">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 mt-0 text-gray-800">Post a
                                 Message of
                                 Condolence</h1>
@@ -134,8 +133,7 @@ const Home = () => {
                                 <span className="text-lg inline-block:items-center font-semibold mt-3 text-white">Message submitted for review</span>}
                         </div>
                     </div>
-                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-1/2 mr-8">
-                        <section className="text-gray-600 body-font">
+                    <div className="lg:w-1/2 md:w-1/2 mx-auto">
                             <div className="container px-5 mx-auto mb-24 mt-40">
                                 <div className=" w-full mx-auto text-center">
                                     <h2 className="text-gray-900 font-medium title-font tracking-wider text-lg">Death Is
@@ -157,7 +155,6 @@ const Home = () => {
                                         around the corner.<br></br>All is well.</p>
                                 </div>
                             </div>
-                        </section>
                     </div>
                 </div>
             </section>
