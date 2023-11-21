@@ -58,7 +58,7 @@ export default function Home({}) {
             </div>
             <div className="h-96 overflow-hidden mb-8">
                 <img alt="content" className="object-cover object-center h-full w-full p-8"
-                     src="13.jpg"/>
+                     src="14.jpg"/>
             </div>
 
             <div className='grid grid-cols-1 mb-16'>

@@ -17,25 +17,25 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="container mx-auto flex px-5 py-2 items-center justify-center flex-row flex-col">
-                    <div className=" items-center text-base justify-center px-4 relative break-words">
-                        <a className="px-2">
+                    <div className=" items-center text-base justify-center px-4 ">
+                        <a className="px-2 lg:w-1/4 sm:w-1/4">
                             <Link href="/">
-                                <span className="cursor-pointer text-sm text-gray-800 break-words">Home</span>
+                                <span className="cursor-pointer text-sm text-gray-800 ">Home</span>
                             </Link>
                         </a>
-                        <a className="px-2">
+                        <a className="px-2 lg:w-1/4 sm:w-1/4">
                             <Link href="/post-message">
-                                <span className="cursor-pointer text-sm text-gray-800 break-words">Post Message</span>
+                                <span className="cursor-pointer text-sm text-gray-800 ">Post Message</span>
                             </Link>
                         </a>
-                        <a className="px-2">
+                        <a className="px-2 lg:w-1/4 sm:w-1/4">
                             <Link href="/view-messages">
-                                <span className="cursor-pointer text-sm text-gray-800 break-words">View Messages</span>
+                                <span className="cursor-pointer text-sm text-gray-800 ">View Messages</span>
                             </Link>
                         </a>
-                        <a className="px-2">
+                        <a className="px-2 lg:w-1/4 sm:w-1/4">
                             <Link href="/donate">
-                                <span className="cursor-pointer text-sm text-gray-800 break-words">Donate</span>
+                                <span className="cursor-pointer text-sm text-gray-800 ">Donate</span>
                             </Link>
                         </a>
                     </div>
