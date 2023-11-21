@@ -14,7 +14,7 @@ export default function Home() {
         <Header />
           <section className="text-gray-600 body-font">
               <div className="flex flex-col text-center w-full mt-16">
-                  <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-800">Tribute and Memorial Donation</h1>
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-800 px-8">Tribute and Memorial Donation</h1>
                   <p className="lg:w-2/3 mx-auto leading-relaxed text-base">*impact statement*</p>
               </div>
               <div className="container px-5 py-24 mx-auto">
