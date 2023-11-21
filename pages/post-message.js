@@ -89,54 +89,53 @@ const Home = () => {
             <Header/>
 
             <section className="text-gray-600 body-font">
-                <div className="container flex px-8 mt-0 md:flex-row flex-col items-center">
-                    <div className="lg:w-1/2 md:w-1/2 mx-auto">
-                        <div className="flex flex-col text-center w-full mb-12 mt-16">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 mt-0 text-gray-800">Post a
+                <div className="container px-8 py-16 mx-auto">
+                    <div className="flex flex-wrap">
+                        <div className="lg:w-1/2 md:w-full px-8">
+                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800 text-center">Post a
                                 Message of
                                 Condolence</h1>
-                            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Please share a
+                            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500 text-center mb-8">Please share a
                                 message of condolence
                                 with the family in the box below.</p>
-                        </div>
-                        <div className="flex flex-wrap -m-2">
-                            <div className="p-2 w-1/2">
-                                <div className="relative">
-                                    <input ref={nameEl}
-                                           className="py-2 px-4  w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
-                                           placeholder="Name" name="name"/>
+                            <div className="flex flex-wrap -m-2">
+                                <div className="p-2 w-1/2">
+                                    <div className="relative">
+                                        <input ref={nameEl}
+                                               className="py-2 px-4  w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+                                               placeholder="Name" name="name"/>
+                                    </div>
+                                </div>
+                                <div className="p-2 w-1/2">
+                                    <div className="relative">
+                                        <input ref={locationEl}
+                                               className="py-2 px-4  w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+                                               placeholder="Location" name="location"/>
+                                    </div>
+                                </div>
+                                <div className="p-2 w-full">
+                                    <div className="relative">
+                                        <input ref={messageEl}
+                                               className="py-32 px-4  w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+                                               placeholder="Message" name="message"/>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="p-2 w-1/2">
-                                <div className="relative">
-                                    <input ref={locationEl}
-                                           className="py-2 px-4  w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
-                                           placeholder="Location" name="location"/>
-                                </div>
-                            </div>
+                            {error && <p className="text-xs text-red-500">All fields are required</p>}
                             <div className="p-2 w-full">
-                                <div className="relative">
-                                    <input ref={messageEl}
-                                           className="py-32 px-4  w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
-                                           placeholder="Message" name="message"/>
-                                </div>
+                                <br></br>
+                                <button type="button" onClick={handleMessageSubmission}
+                                        className="transition duration-500 ease flex mx-auto text-white bg-gray-400 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg mb-8">Post
+                                    Message
+                                </button>
+                                {showSuccessMessage &&
+                                    <span className="text-lg inline-block:items-center font-semibold mt-3 text-white">Message submitted for review</span>}
                             </div>
                         </div>
-                        {error && <p className="text-xs text-red-500">All fields are required</p>}
-                        <div className="p-2 w-full">
-                            <br></br>
-                            <button type="button" onClick={handleMessageSubmission}
-                                    className="transition duration-500 ease flex mx-auto text-white bg-gray-400 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg mb-8">Post
-                                Message
-                            </button>
-                            {showSuccessMessage &&
-                                <span className="text-lg inline-block:items-center font-semibold mt-3 text-white">Message submitted for review</span>}
-                        </div>
-                    </div>
-                    <div className="lg:w-1/2 md:w-1/2 mx-auto">
-                            <div className="container px-5 mx-auto mb-24 mt-40">
-                                <div className=" w-full mx-auto text-center">
-                                    <h2 className="text-gray-900 font-medium title-font tracking-wider text-lg">Death Is
+                        <div className="lg:w-1/2 md:w-full">
+                            <div className="container">
+                                <div className=" w-full text-center">
+                                    <h2 className="text-gray-900 font-medium title-font tracking-wider text-xl">Death Is
                                         Nothing At All</h2>
                                     <p className="text-gray-500">by Naa Dedei Crabbe</p>
                                     <span className="inline-block h-1 w-10 rounded bg-gray-500 mt-8 mb-6"></span>
@@ -155,6 +154,7 @@ const Home = () => {
                                         around the corner.<br></br>All is well.</p>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -163,8 +163,3 @@ const Home = () => {
 }
 
 export default Home;
-
-export const metadata = {
-    title: 'Book of Condolence',
-    description: 'Submit a message on our online memorial book in loving memory of Gilbert Dan-Nartey',
-}
