@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "styles/globals.css";
 
-const Modal = () => {
+const DedicationModal = () => {
     const [showModal, setShowModal] = useState(false);
     return (
         <>
@@ -27,6 +27,7 @@ const Modal = () => {
                                             <img src="donation_dedication.png" className="center py-4 border-2"/>
                                         </div>
                                         <div className="lg:w-1/2 items-center justify-center text-center mt-8">
+                                            {/* eslint-disable-next-line react/no-unescaped-entities */}
                                             <p>Please click the Redirect button below to visit The Alzheimer's Society's website to make your donation.<br /><br />Please dedicate your donation to Gilbert Dan-Nartey so that we can extend our thanks and gratitude.<br /><br />Your kind sympathy and support is greatly appreciated.</p>
                                             <br></br>
                                             <a href="https://www.alzheimers.org.uk/get-involved/donate?form=DonateNow">
@@ -50,4 +51,4 @@ const Modal = () => {
     );
 };
 
-export default Modal;
+export default DedicationModal;

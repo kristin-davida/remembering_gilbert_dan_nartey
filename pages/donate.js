@@ -1,9 +1,7 @@
 import "styles/globals.css";
 
-import {Header} from "@/components";
-import {Modal} from "@/components";
+import {Header, Modal, DedicationModal} from "@/components";
 import React, {useState} from "react";
-import DedicationModal from "@/components/DedicationModal";
 
 
 export default function Home() {
