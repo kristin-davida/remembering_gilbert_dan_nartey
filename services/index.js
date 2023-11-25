@@ -17,7 +17,7 @@ export const submitMessage = async (obj) => {
 export const getMessages = async () => {
   const query = gql`
     query GetMessages {
-      commentsConnection {
+      commentsConnection (first: 50) {
         edges {
           node {
             location
